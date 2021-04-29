@@ -1,0 +1,16 @@
+
+<form {{action 'formAction' on="submit"}}>
+        <div class="row">
+            <label>FirstName: </label><br/>
+            {{input value=this.firstname required=true}}
+        </div>
+        <div class="row">
+            <label>LastName: </label><br/>
+            {{input value=this.lastname required=true}}
+        </div>
+        <div class="row">
+            <label>Age: </label><br/>
+            {{input value=this.age required=true}}
+        </div>
+        <button type="submit">{{this.title}}</button>
+</form>

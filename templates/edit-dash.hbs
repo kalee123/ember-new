@@ -1,0 +1,21 @@
+<h1>Edit page</h1>
+
+<div class="form-container">
+    <FormCompo 
+        @title="Update"
+        @firstname={{this.model.firstname}} 
+        @lastname={{this.model.lastname}}
+        @age={{this.model.age}}
+        @id={{this.model.id}}
+        @edit={{action 'editDash' }}/>    
+</div>
+
+{{!-- {{#each @model.attributes as |item|}}
+    <div>item.id</div>
+{{/each}}
+<form {{action 'editDash' @model.firstname model.lastname model.age @model.id on="submit"}}>
+    {{input value=@model.firstname required=true}}
+    {{input value=@model.lastname required=true}}
+    {{input value=@model.age required=true}}
+    <button type="submit">add</button>
+</form> --}}

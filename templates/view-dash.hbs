@@ -1,0 +1,26 @@
+<div class="card-container">
+    {{#each @model as |dash|}}
+        <div class="card">
+            <p>
+                <span class="col-1">FirstName </span>
+                <span class="col-2">: {{dash.firstname}}</span>
+            </p> 
+            <p>
+                <span class="col-1">LastName </span>
+                <span class="col-2">: {{dash.lastname}}</span>
+            </p>
+            <p>
+                <span class="col-1">Age </span>
+                <span class="col-2">: {{dash.age}}</span>
+            </p> 
+            <p>
+                <span class="col-1">ID </span>
+                <span class="col-2">: {{dash.id}}</span>
+            </p> 
+            <button {{action "delete" dash.id}}>delete</button>
+            {{#link-to "editDash" dash.id}}<button>Edit</button>{{/link-to}}
+        </div>
+        {{!-- <CardCompo @data={{this.model.firstname}}/> --}}
+    {{/each}}
+    
+</div>

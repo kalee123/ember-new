@@ -1,0 +1,21 @@
+{{!-- <DashForm /> --}}
+<div class="form-container" >
+    {{!-- <form {{action 'createDash' on="submit"}}>
+        <div class="row">
+            <label>FirstName: </label><br/>
+            {{input value=this.firstname required=true}}
+        </div>
+        <div class="row">
+            <label>LastName: </label><br/>
+            {{input value=this.lastname required=true}}
+        </div>
+        <div class="row">
+            <label>Age: </label><br/>
+            {{input value=this.age required=true}}
+        </div>
+        <button type="submit">Create</button>
+    </form> --}}
+    <FormCompo 
+        @title="Create"
+        @filter={{action "createNew"}}/>
+</div>
